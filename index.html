@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principal</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <title>Tradcutor</title>
+    <link rel="stylesheet" type="text/css" href="estilos-traductor.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -14,9 +15,7 @@
                     <div class="nav-container-logo">
                         <a href="index.html"><b>Logo</b></a>
                     </div>
-                    <div class="nav-container-tradcutor">
-                        <a href="Tradcutor.html"><b>Tradcutor</b></a>
-                    </div>
+                    
                     <div class="nav-container-vocabulario">
                         <a href="vocabulario.html"><b>Vocabulario</b></a>
                     </div>
@@ -35,30 +34,39 @@
         </nav>
         
     </header>
-    <main class="main">
-        <div class="content">
-            <div class="content-container-main">
-                <div class="title">
-                    <h1>Traductor Español a Q'eqchi'</h1>
-                </div>
-                <div class="buscador">
-                    <input class="txt-palabra" type="text" placeholder="Ingrese aquí la palabra" id="palabra"/>
-                   <button class="bt-search" type="submit">🔍︎</button>
-                </div>
+
+    <main class="main-translate">
+        <div class="content-translate">
+            <div class="idioma">
+                <div class="idioma-ingresado">Español</div>
+                <div class="idioma-mostrado">Qeqchi'</div>
             </div>
-            <div class="container-content-text">
-                <h2 class="h2-main">¿Qué es Q'eqchi'?</h2>
-                <p class="p-main"> Es una lengua mayense de la rama quicheana hablada por la etnia del mismo nombre en una gran extensión 
-                    territorial que abarca Belice, el sur de México, los departamentos de Alta Verapaz, Baja Verapaz, Petén, 
-                    Izabal, Zacapa y Quiché en Guatemala y parte de El Salvador. Es el idioma de la familia de lenguas mayenses 
-                    con mayor distribución territorial, además, es también el más hablado de toda la familia mayense.</p>
+
+            <div class="content-container-main-translate">
+              
+                <div class="buscador">
+                    <input class="input-palabra" id="miInput" type="text" placeholder="Ingrese aquí la palabra" id="palabra"/>
+                  
+                </div>
+                <div class="boton">
+                    <button class="btn-Buscar"  id="miBoton" type="submit">Buscar</button>
+                </div>
+                <div class="mostrar-texto">
+                    <textarea class="get-texto" class="translate-area" readonly placeholder="Posibles Resultados"></textarea><br/>
+                </div>
+                
             </div>
         </div>
-    </main>
-    <footer class="footer">
-        <p>Copyright © Derechos Reservados</p>
-    </footer>
-        
+        <div class="text-section">
+            <div class="info">
+                <h1 id="titulo-section"> Que es el q'eqchi'?</h1>
+                <p id="texto-section">
+                    El Q'eqchi' (escrito también Q'eqchí' en español y q'eqchi' de acuerdo con la ortografía establecida en la Ley de Idiomas Mayas, Decreto 19-2003 y las acciones de estandarización realizadas por la Academia de Lenguas Mayas de Guatemala) es una lengua mayense de la rama quicheana hablada por la etnia del mismo nombre en una gran extensión territorial que abarca Belice, el sur de México, los departamentos de Alta Verapaz, Baja Verapaz, Petén, Izabal, Zacapa y Quiché en Guatemala y parte de El Salvador. Es el idioma de la familia de lenguas mayenses con mayor distribución territorial, además, es también el más hablado de toda la familia mayense.
 
+El idioma q'eqchi' se originó en lo que actualemente corresponde al departamento de Alta Verapaz, Guatemala, hay hablantes de q'eqchi' en Belice, México, otras partes de Guatemala y más recientemente en El Salvador, producto de históricas migraciones.5​ Es hablado en su mayoría en áreas rurales de estos países.
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
